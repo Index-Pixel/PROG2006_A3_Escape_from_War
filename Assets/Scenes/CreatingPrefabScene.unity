@@ -496,5 +496,13 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8792286001388474759, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792286001388474759, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
