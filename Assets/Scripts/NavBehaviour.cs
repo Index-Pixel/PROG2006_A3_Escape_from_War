@@ -12,6 +12,7 @@ public class NavBehaviour : MonoBehaviour
 	private GameObject _mSound;
 	private GameObject _mNarrator;
 	private GameObject _info;
+	private GameObject _home;
 	public void LoadMyScene(int scene){
 		if (scene >= 0 && scene < SceneManager.sceneCountInBuildSettings-1) {
 			SceneManager.LoadScene(scene);
@@ -32,6 +33,12 @@ public class NavBehaviour : MonoBehaviour
 		SceneManager.LoadScene(scene.buildIndex - 1);
 	}
 
+	public void ReloadCurrentScene()
+	{
+		Scene scene = SceneManager.GetActiveScene();
+		LoadMyScene(scene.buildIndex);
+	}
+
 	// called first
 	void OnEnable()
 	{
@@ -48,13 +55,19 @@ public class NavBehaviour : MonoBehaviour
 	{
 		_lButton = GameObject.Find("LastPage");
 		_nButton = GameObject.Find("NextPage");
-		_mSound = GameObject.Find("SoundMute"); ;
-		_mNarrator = GameObject.Find("NarratorMute"); ;
-		_info = GameObject.Find("Information"); ;
+		_mSound = GameObject.Find("SoundMute");
+		_mNarrator = GameObject.Find("NarratorMute");
+		_info = GameObject.Find("Information");
+		_home = GameObject.Find("Home"); ;
 		if (_lButton != null)
 		{
 			if(scene.buildIndex == 0)
 				_lButton.GetComponent<Button>().interactable = false;
+		}
+		if (_home != null)
+		{
+			if (scene.buildIndex == 0)
+				_home.GetComponent<Button>().interactable = false;
 		}
 		if (_nButton != null)
 		{
