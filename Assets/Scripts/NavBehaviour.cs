@@ -13,6 +13,7 @@ public class NavBehaviour : MonoBehaviour
 	private GameObject _mNarrator;
 	private GameObject _info;
 	private GameObject _home;
+	private GameObject _infotext;
 	public void LoadMyScene(int scene){
 		if (scene >= 0 && scene < SceneManager.sceneCountInBuildSettings-1) {
 			SceneManager.LoadScene(scene);
@@ -58,7 +59,8 @@ public class NavBehaviour : MonoBehaviour
 		_mSound = GameObject.Find("SoundMute");
 		_mNarrator = GameObject.Find("NarratorMute");
 		_info = GameObject.Find("Information");
-		_home = GameObject.Find("Home"); ;
+		_home = GameObject.Find("Home");
+		_infotext = GameObject.Find("InfoTextPanel");
 		if (_lButton != null)
 		{
 			if(scene.buildIndex == 0)
@@ -76,19 +78,38 @@ public class NavBehaviour : MonoBehaviour
 		}
 		if (_mSound != null)
 		{
-			if (scene.buildIndex == 6)
-				_mSound.GetComponent<Toggle>().isOn = !SharedVariables.Instance.muteSound;
+			_mSound.GetComponent<Toggle>().isOn = SharedVariables.Instance.muteSound;
 		}
 		if (_mNarrator != null)
 		{
-			if (scene.buildIndex == 6)
-				_mNarrator.GetComponent<Toggle>().isOn = !SharedVariables.Instance.muteNarrator;
+			_mNarrator.GetComponent<Toggle>().isOn = SharedVariables.Instance.muteNarrator;
 		}
 		if (_info != null)
 		{
-			if (scene.buildIndex == 6)
-				_info.GetComponent<Toggle>().isOn = !SharedVariables.Instance.activeInfo;
+			_info.GetComponent<Toggle>().isOn = SharedVariables.Instance.activeInfo;
+		}
+		if (_infotext != null)
+		{
+			_infotext.GetComponent<SpriteRenderer>().enabled = SharedVariables.Instance.activeInfo;
 		}
 	}
 
+	public void toggleSound()
+	{
+		SharedVariables.Instance.toggleSound();
+	}
+
+	public void toggleNarrator()
+	{
+		SharedVariables.Instance.toggleNarrator();
+	}
+
+	public void toggleInfo()
+	{
+		SharedVariables.Instance.toggleInfo();
+		if (_infotext != null)
+		{
+			_infotext.GetComponent<SpriteRenderer>().enabled = SharedVariables.Instance.activeInfo;
+		}
+	}
 }
