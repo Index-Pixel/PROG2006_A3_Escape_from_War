@@ -90,7 +90,7 @@ public class NavBehaviour : MonoBehaviour
 		}
 		if (_infotext != null)
 		{
-			_infotext.GetComponent<SpriteRenderer>().enabled = SharedVariables.Instance.activeInfo;
+			_infotext.SetActive(SharedVariables.Instance.activeInfo);
 		}
 	}
 
@@ -109,7 +109,7 @@ public class NavBehaviour : MonoBehaviour
 		SharedVariables.Instance.toggleInfo();
 		if (_infotext != null)
 		{
-			_infotext.GetComponent<SpriteRenderer>().enabled = SharedVariables.Instance.activeInfo;
+			_infotext.SetActive(SharedVariables.Instance.activeInfo);
 		}
 	}
 }
