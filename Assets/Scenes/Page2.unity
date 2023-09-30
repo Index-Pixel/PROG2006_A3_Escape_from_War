@@ -300,6 +300,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 526692735}
+  - {fileID: 992834770}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -315,6 +316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 502109488}
     m_Modifications:
+    - target: {fileID: 3602859161031709125, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7277204559724453203, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -433,6 +438,132 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8792286000133046154, guid: 30447ad8763b1f84a823fb27687d6d32, type: 3}
   m_PrefabInstance: {fileID: 526692734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &992834769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 502109488}
+    m_Modifications:
+    - target: {fileID: 1192035633312564922, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e399446be70eb034cb69dff7b44d8de4, type: 3}
+    - target: {fileID: 6145102503284072257, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_Name
+      value: TextArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -480
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102504417898556, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_text
+      value: Journey through East Prussia
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102504417898556, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_fontSize
+      value: 29.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102504499080072, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_text
+      value: "Their wagon rolled onward through East Prussia, passing under the shadow
+        of the Starlin Organ, a haunting reminder of the ongoing war's perils.  Thea's
+        father converted the wagon into a sled, placing Thea and her sister, Ruth,
+        on it. He pulled them towards K\xF6nigsberg, through the freezing, unforgiving
+        snow."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145102504499080072, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+      propertyPath: m_fontSize
+      value: 37.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+--- !u!224 &992834770 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6145102503284072286, guid: bc489ae5468e5af4f9a3be1cfe4b388d, type: 3}
+  m_PrefabInstance: {fileID: 992834769}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1059163201
 GameObject:
