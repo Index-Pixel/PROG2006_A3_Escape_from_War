@@ -8,12 +8,14 @@ public class SharedVariables : MonoBehaviour
     public bool activeInfo;
     public bool muteSound;
     public bool muteNarrator;
+    public bool freshStarted;
  
     private SharedVariables()
     {
         muteSound = false;
         muteNarrator = false;
-        activeInfo = false;
+        activeInfo = true;
+        freshStarted = true;
     }
 
     public void toggleSound()
@@ -29,6 +31,8 @@ public class SharedVariables : MonoBehaviour
     public void toggleInfo()
     {
         activeInfo = !activeInfo;
+        if (freshStarted)
+            freshStarted = !freshStarted;
     }
 
     public bool getNarrator()

@@ -14,6 +14,7 @@ public class NavBehaviour : MonoBehaviour
 	private GameObject _info;
 	private GameObject _home;
 	private GameObject _infotext;
+
 	public void LoadMyScene(int scene){
 		if (scene >= 0 && scene < SceneManager.sceneCountInBuildSettings-1) {
 			SceneManager.LoadScene(scene);
@@ -107,10 +108,16 @@ public class NavBehaviour : MonoBehaviour
 
 	public void toggleInfo()
 	{
+		GameObject _infoAnim;
 		SharedVariables.Instance.toggleInfo();
 		if (_infotext != null)
 		{
 			_infotext.SetActive(SharedVariables.Instance.activeInfo);
+		}
+		_infoAnim = GameObject.Find("InfoAnim");
+		if (_infoAnim != null)
+		{
+			_infoAnim.SetActive(false); ;
 		}
 	}
 }
