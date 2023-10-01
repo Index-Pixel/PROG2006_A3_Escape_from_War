@@ -14,6 +14,7 @@ public class NavBehaviour : MonoBehaviour
 	private GameObject _info;
 	private GameObject _home;
 	private GameObject _infotext;
+	private GameObject _pageSound;
 
 	public void LoadMyScene(int scene){
 		if (scene >= 0 && scene < SceneManager.sceneCountInBuildSettings-1) {
@@ -62,6 +63,7 @@ public class NavBehaviour : MonoBehaviour
 		_info = GameObject.Find("Information");
 		_home = GameObject.Find("Home");
 		_infotext = GameObject.Find("InfoTextPanel");
+		_pageSound = GameObject.Find("PageSound");
 		if (_lButton != null)
 		{
 			if(scene.buildIndex == 0)
@@ -83,8 +85,16 @@ public class NavBehaviour : MonoBehaviour
 		}
 		if (_mNarrator != null)
 		{
+			
 			_mNarrator.GetComponent<Toggle>().isOn = SharedVariables.Instance.muteNarrator;
+	
 		}
+
+		if (_pageSound != null)
+		{
+			_pageSound.SetActive(!SharedVariables.Instance.muteNarrator); ;
+		}
+
 		if (_info != null)
 		{
 			_info.GetComponent<Toggle>().isOn = SharedVariables.Instance.activeInfo;
