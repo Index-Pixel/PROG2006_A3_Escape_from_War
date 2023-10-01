@@ -88,6 +88,7 @@ public class NavBehaviour : MonoBehaviour
 		{
 			_info.GetComponent<Toggle>().isOn = SharedVariables.Instance.activeInfo;
 		}
+
 		if (_infotext != null)
 		{
 			_infotext.SetActive(SharedVariables.Instance.activeInfo);
