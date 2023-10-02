@@ -89,14 +89,12 @@ public class NavBehaviour : MonoBehaviour
 		}
 		if (_mNarrator != null)
 		{
-			
 			_mNarrator.GetComponent<Toggle>().isOn = SharedVariables.Instance.muteNarrator;
-	
 		}
 
 		if (_pageSound != null)
 		{
-			_pageSound.SetActive(!SharedVariables.Instance.muteNarrator); ;
+			_pageSound.SetActive(!SharedVariables.Instance.muteNarrator);
 		}
 
         if (_pageAnimation != null)
