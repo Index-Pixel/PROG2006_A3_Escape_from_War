@@ -99,7 +99,8 @@ public class NavBehaviour : MonoBehaviour
 
         if (_pageAnimation != null)
         {
-			_pageAnimation.GetComponent<AudioSource>().mute = SharedVariables.Instance.muteSound;
+			foreach (AudioSource a in _pageAnimation.GetComponents<AudioSource>())
+				a.mute = SharedVariables.Instance.muteSound; 
 		}
 
 		if (_info != null)
@@ -127,7 +128,8 @@ public class NavBehaviour : MonoBehaviour
 		_pageAnimation = GameObject.Find("Level2");
 		if (_pageAnimation != null)
 		{
-			_pageAnimation.GetComponent<AudioSource>().mute = SharedVariables.Instance.muteSound;
+			foreach (AudioSource a in _pageAnimation.GetComponents<AudioSource>())
+				a.mute = SharedVariables.Instance.muteSound;
 		}
 		GameObject.Find("Canvas").GetComponent<AudioSource>().mute = SharedVariables.Instance.muteSound;
 		if (!SharedVariables.Instance.muteNarrator && SharedVariables.Instance.muteSound)
