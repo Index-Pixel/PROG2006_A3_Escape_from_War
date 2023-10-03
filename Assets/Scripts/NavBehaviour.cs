@@ -154,6 +154,8 @@ public class NavBehaviour : MonoBehaviour
 		SharedVariables.Instance.toggleInfo();
 		if (_infotext != null)
 			_infotext.SetActive(SharedVariables.Instance.activeInfo);
+		else
+			print("Panel not found");
 
 		_infoAnim = GameObject.Find("InfoAnim");
 		if (_infoAnim != null)
