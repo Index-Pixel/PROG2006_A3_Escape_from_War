@@ -11409,6 +11409,8 @@ PlayableDirector:
     value: {fileID: 1173696147}
   - key: {fileID: -6363991383970010641, guid: 33f917f2ce07aff449ed7aa6e413b904, type: 2}
     value: {fileID: 1173696146}
+  - key: {fileID: -5494962306439627605, guid: 33f917f2ce07aff449ed7aa6e413b904, type: 2}
+    value: {fileID: 4464188914452759572}
   m_ExposedReferences:
     m_References: []
 --- !u!82 &1173696146
@@ -12185,18 +12187,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1173696145}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1052688209346592073}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -559,18 +559,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8792286000183874361}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 59846372}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4470,6 +4458,8 @@ PlayableDirector:
     value: {fileID: 743365864}
   - key: {fileID: -7094983119932833107, guid: c3991386fac228745acd4137347cfc2a, type: 2}
     value: {fileID: 743365866}
+  - key: {fileID: 3512818393606952404, guid: c3991386fac228745acd4137347cfc2a, type: 2}
+    value: {fileID: 8247180200316441131}
   m_ExposedReferences:
     m_References: []
 --- !u!82 &743365866
